@@ -11,6 +11,7 @@
 #import <VizbeeHomeOSKit/VizbeeHomeOSKit.h>
 
 #import "VZBRequest.h"
+#import "VZBSmartPlayOptions.h"
 
 #import "VZBAppAdapterDelegate.h"
 #import "VZBAuthenticationDelegate.h"
@@ -164,6 +165,10 @@
 presentingViewController:(UIViewController * _Nonnull)viewController;
 
 +(void) smartPlay:(VZBRequest* _Nonnull) request
+presentingViewController:(UIViewController * _Nonnull)viewController;
+
++(void) smartPlay:(VZBRequest* _Nonnull) request
+      withOptions:(VZBSmartPlayOptions* _Nonnull) options
 presentingViewController:(UIViewController * _Nonnull)viewController;
 
 //----------------------------------
